@@ -1,0 +1,21 @@
+[package]
+name = "vulkan-tutorial"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+cgmath = "0.18"
+png = "0.17"
+pretty_env_logger = "0.5"
+thiserror = "1"
+tobj = { version = "4.0.2", features = ["log"] }
+vulkanalia = { version = "=0.33.0", features = [
+    "libloading",
+    "provisional",
+    "window",
+] }
+anyhow = "1.0.86"
+winit = "0.30.3"
